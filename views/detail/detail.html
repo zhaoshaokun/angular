@@ -1,0 +1,16 @@
+<div class="loader" ng-if="isLoading">
+	<div class="loader-inner ball-clip-rotate-multiple">
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	</div>
+</div>
+<div class="jumbotron">
+  <h3>{{detailMovie.title}}
+	<span class="badge pull-right">{{detailMovie.rating.average}}</span>
+  </h3>
+  <img ng-src="{{detailMovie.images.large}}" alt="">
+  <p>{{detailMovie.summary}}</p>
+</div>

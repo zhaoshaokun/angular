@@ -9,7 +9,7 @@
 	 * CONSTANTS.API_URL
 	 */
   angular
-  	.module('boilerplate')
+  	.module('dbMVP')
     .constant('CONSTANTS', {
       'API_URL': 'http://www.yourAPIurl.com/'
     });

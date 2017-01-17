@@ -205,7 +205,7 @@ gulp.task('templates', function() {
     ])
     .pipe($.minifyHtml())
     .pipe($.angularTemplatecache({
-      module: 'boilerplate'
+      module: 'dbMVP'
     }))
     .pipe(gulp.dest('_build/js'));
 });
@@ -239,8 +239,8 @@ gulp.task('default', ['browser-sync', 'sass', 'minify-css'], function() {
       reload(file.path);
     }
   });
-  gulp.watch(['*.html', 'components/**/*.html', 'views/*.html'], ['bs-reload']);
-  gulp.watch(['app/*.js', 'components/**/*.js', 'js/*.js'], ['bs-reload']);
+  gulp.watch(['*.html', 'components/**/*.html', 'views/**/*.html'], ['bs-reload']);
+  gulp.watch(['app/**/*.js', 'components/**/*.js', 'js/*.js'], ['bs-reload']);
   gulp.watch('styles/**/*.scss', ['sass', 'minify-css']);
 });
 
